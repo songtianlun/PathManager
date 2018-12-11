@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegisterActivity"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/qmui_config_color_blue">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/qmui_topbar_height"
+        app:qmui_topbar_bg_color="@color/qmui_config_color_blue" />
+
+    <RelativeLayout
+        android:id="@+id/Register_Relative"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/topbar"
+        android:layout_marginTop="56dp"
+        android:background="@color/qmui_config_color_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/topIM"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_top"/>
+
+        <TextView
+            android:id="@+id/IDTV"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/topIM"
+            android:layout_marginLeft="50dp"
+            android:text="账号："
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/Register_idEditText"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/topIM"
+            android:layout_toRightOf="@id/IDTV"
+            android:textCursorDrawable="@color/qmui_config_color_blue"
+            android:maxLength="12"
+            android:theme="@style/MyEdithem" />
+
+        <TextView
+            android:id="@+id/PWTV"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/IDTV"
+            android:layout_marginLeft="50dp"
+            android:text="密码："
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/Register_pwEditText"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/PWTV"
+            android:layout_below="@id/Register_idEditText"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@color/qmui_config_color_blue"
+            android:maxLength="12"
+            android:theme="@style/MyEdithem"/>
+
+        <TextView
+            android:id="@+id/NNTV"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/PWTV"
+            android:layout_marginLeft="50dp"
+            android:text="昵称："
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/Register_nnEditText"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/NNTV"
+            android:layout_below="@id/Register_pwEditText"
+            android:textCursorDrawable="@color/qmui_config_color_blue"
+            android:maxLength="12"
+            android:theme="@style/MyEdithem"/>
+
+        <TextView
+            android:id="@+id/SETV"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/NNTV"
+            android:layout_marginLeft="50dp"
+            android:text="性别："
+            android:gravity="center"/>
+        <RadioGroup
+            android:id="@+id/Register_seRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/SETV"
+            android:layout_below="@id/Register_nnEditText"
+            android:orientation="horizontal"
+            android:theme="@style/MyRadiothem">
+            <RadioButton
+                android:id="@+id/nan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:gravity="center"
+                android:text="男"
+                android:theme="@style/MyRadiothem"/>
+            <RadioButton
+                android:id="@+id/nv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:checked="false"
+                android:text="女"
+                android:theme="@style/MyRadiothem"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/SMTV"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/SETV"
+            android:layout_marginLeft="50dp"
+            android:text="学校："
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/Register_smEditText"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/SMTV"
+            android:layout_below="@id/Register_seRadioGroup"
+            android:textCursorDrawable="@color/qmui_config_color_blue"
+            android:maxLength="12"
+            android:theme="@style/MyEdithem"/>
+
+        <TextView
+            android:id="@+id/PMTV"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/SMTV"
+            android:layout_marginLeft="50dp"
+            android:text="专业："
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/Register_pmEditText"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/PMTV"
+            android:layout_below="@id/Register_smEditText"
+            android:textCursorDrawable="@color/qmui_config_color_blue"
+            android:maxLength="12"
+            android:theme="@style/MyEdithem"/>
+
+
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/Register_QMUIRB_OK"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="确认注册"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="440dp" />
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/Register_QMUIRB_Cancle"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="取消注册"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="500dp"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

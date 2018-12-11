@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_path_record"
+        android:title="@string/title_pyth_record" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_personal_report"
+        android:title="@string/title_personal_report" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_personal_center"
+        android:title="@string/title_personal_center" />
+
+</menu>

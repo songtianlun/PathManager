@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="@color/qmui_config_color_black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.supermap.android.maps.MapView
+        android:id="@+id/MapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/qmui_config_color_black"
+        android:clickable="true"
+        android:enabled="true"/>
+    <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+        android:id="@+id/QMUIIMap"
+        android:layout_width="@dimen/mb_width_100"
+        android:layout_height="@dimen/mb_width_100"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+
+        android:layout_above="@id/pythbutton"
+        android:src="@drawable/ic_map"
+        app:qmui_border_color="?attr/qmui_config_color_blue"
+        app:qmui_border_width="1px"
+        app:qmui_is_circle="true"
+        app:qmui_selected_border_color="?attr/qmui_config_color_blue"
+        app:qmui_selected_border_width="1px"
+        app:qmui_selected_mask_color="?attr/qmui_config_color_separator_darken"
+        />
+
+    <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+        android:id="@+id/QMUIHotMap"
+        android:layout_width="@dimen/mb_width_100"
+        android:layout_height="@dimen/mb_width_100"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/QMUIIMap"
+
+        android:src="@drawable/ic_map_hot"
+        app:qmui_border_color="?attr/qmui_config_color_blue"
+        app:qmui_border_width="1px"
+        app:qmui_is_circle="true"
+        app:qmui_selected_border_color="?attr/qmui_config_color_blue"
+        app:qmui_selected_border_width="1px"
+        app:qmui_selected_mask_color="?attr/qmui_config_color_separator_darken"
+        />
+
+    <com.example.songt.pathmanager.UI.DynamicButton
+        android:id="@+id/pythbutton"
+        android:layout_width="@dimen/mb_width_100"
+        android:layout_height="@dimen/mb_height_36"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:text="管家休息中"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="@color/qmui_config_color_black">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar_report"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/qmui_topbar_height"
+        app:qmui_topbar_bg_color="@color/qmui_config_color_black"
+        app:qmui_topbar_title_color="@color/qmui_config_color_white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topbar_report"
+        android:background="@color/qmui_config_color_black"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <lecho.lib.hellocharts.view.LineChartView
+            android:id="@+id/day_chart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="1"></lecho.lib.hellocharts.view.LineChartView>
+
+        <lecho.lib.hellocharts.view.LineChartView
+            android:id="@+id/week_chart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"></lecho.lib.hellocharts.view.LineChartView>
+
+        <lecho.lib.hellocharts.view.LineChartView
+            android:id="@+id/month_chart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"></lecho.lib.hellocharts.view.LineChartView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/topbar_report">
+
+        <TextView
+            android:id="@+id/day_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="日报表"
+            android:textColor="@color/qmui_config_color_white"
+            android:visibility="visible" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="8"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/week_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="最近七天"
+            android:textColor="@color/qmui_config_color_white"
+            android:visibility="visible" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="8"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/month_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="月报表"
+            android:textColor="@color/qmui_config_color_white"
+            android:visibility="visible" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="8"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+</RelativeLayout>

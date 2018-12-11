@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="QMUI.Compat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--适配华为底部导航栏-->
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+    </style>
+
+    <style name="MyEdithem" parent="QMUI.Compat">
+        <item name="colorControlNormal">@color/qmui_config_color_separator_darken</item>
+        <item name="colorControlActivated">@color/qmui_config_color_50_blue</item>
+    </style>
+
+    <style name="MyRadiothem" parent="QMUI.Compat">
+        <item name="colorControlNormal">@color/qmui_config_color_separator_darken</item>
+        <item name="colorControlActivated">@color/qmui_config_color_blue</item>
+    </style>
+
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/qmui_config_color_blue"
+    tools:context=".Activity.TrackMapActivity">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/qmui_topbar_height"
+        app:qmui_topbar_bg_color="@color/qmui_config_color_blue" />
+
+    <RelativeLayout
+        android:id="@+id/Map_Relative"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/topbar"
+        android:layout_marginTop="56dp"
+        android:background="@color/qmui_config_color_75_pure_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <com.supermap.mapping.ScaleView
+            android:id="@+id/scrolvoew"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"/>
+
+        <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+            android:id="@+id/QMUIMonth"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="260dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_month"
+            app:qmui_border_color="?attr/qmui_config_color_blue"
+            app:qmui_border_width="1px"
+            app:qmui_is_circle="true"
+            app:qmui_selected_border_color="?attr/qmui_config_color_blue"
+            app:qmui_selected_border_width="1px"
+            app:qmui_selected_mask_color="?attr/qmui_config_color_separator_darken"
+            />
+        <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+            android:id="@+id/QMUIDay"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="170dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_day"
+            app:qmui_border_color="?attr/qmui_config_color_blue"
+            app:qmui_border_width="1px"
+            app:qmui_is_circle="true"
+            app:qmui_selected_border_color="?attr/qmui_config_color_blue"
+            app:qmui_selected_border_width="1px"
+            app:qmui_selected_mask_color="?attr/qmui_config_color_separator_darken"
+            />
+        <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+            android:id="@+id/QMUIswitchMap"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="80dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_switchovermap"
+            app:qmui_border_color="?attr/qmui_config_color_blue"
+            app:qmui_border_width="1px"
+            app:qmui_is_circle="true"
+            app:qmui_selected_border_color="?attr/qmui_config_color_blue"
+            app:qmui_selected_border_width="1px"
+            app:qmui_selected_mask_color="?attr/qmui_config_color_separator_darken"
+            />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
