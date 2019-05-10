@@ -1,7 +1,10 @@
 # 智能生活管家
 
 #### 项目介绍
-一个人性化的轻量级日程管理、便签记录、生活提醒APP
+一个人性化的轻量级日程管理、便签记录、生活提醒APP.
+
+Project profile website.
+[https://songtianlun.github.io/PathManager-Site/]https://songtianlun.github.io/PathManager-Site/
 
 #### 软件架构
 - UI -- QMUI
