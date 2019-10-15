@@ -35,11 +35,7 @@ Project profile website.
 
 ## Contact me
 
-- E-mail: songtianlun@frytea.com
-- GitHub: [songtianlun](https://github.com/songtianlun) 
-
-For more information, please go to my homepage.
-
-MySite: [frytea.com](https://frytea.com/)
-
-Hope you enjoy!
+ - Blog: <https://blog.frytea.com>
+ - HomePage: <https://home.frytea.com>
+ - E-mail: <songtianlun@frytea.com>
+ - WebChart/Phone: (+86)18803979433
